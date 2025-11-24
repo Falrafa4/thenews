@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-top">
-        <img src="./assets/img/logo.svg" alt="Logo News">
+        <img src="/assets/img/logo.svg" alt="Logo News">
     </div>
     <div class="footer-bottom">
         <div class="copyright">
@@ -12,11 +12,11 @@
             <span>Copyright © 2024 - The News - All rights reserved</span>
         </div>
         <div class="footer-links">
-            <img src="./assets/img/instagram.svg" alt="Instagram">
-            <img src="./assets/img/linkedin.svg" alt="LinkedIn">
-            <img src="./assets/img/youtube.svg" alt="YouTube">
-            <img src="./assets/img/twitter.svg" alt="Twitter">
-            <img src="./assets/img/reddit.svg" alt="Reddit">
+            <img src="/assets/img/instagram.svg" alt="Instagram">
+            <img src="/assets/img/linkedin.svg" alt="LinkedIn">
+            <img src="/assets/img/youtube.svg" alt="YouTube">
+            <img src="/assets/img/twitter.svg" alt="Twitter">
+            <img src="/assets/img/reddit.svg" alt="Reddit">
         </div>
     </div>
 </footer>

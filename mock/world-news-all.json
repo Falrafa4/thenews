@@ -1,0 +1,175 @@
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+        {
+            "source": {
+                "id": "axios",
+                "name": "Axios"
+            },
+            "author": "Barak Ravid",
+            "title": "Israel tries to assassinate Hezbollah's top military commander in Beirut - Axios",
+            "description": "Israel struck Beirut, aiming at Hezbollah's top military commander.",
+            "url": "https://www.axios.com/2025/11/23/israel-strike-hezbollah-commander",
+            "urlToImage": "https://images.axios.com/sutl-C9UK8BwVHMMP7U3cSmVYAo=/0x269:6000x3644/1366x768/2025/11/23/1763906487270.jpeg",
+            "publishedAt": "2025-11-23T14:03:53Z",
+            "content": "\u003Cul\u003E\u003Cli\u003EThe strike came amid an ongoing escalation in Israeli strikes against Hezbollah in Lebanon in recent weeks over what Israel claims is an effort by the militant group to rearm and rebuild its … [+1921 chars]"
+        },
+        {
+            "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": "Associated Press",
+            "title": "Japan ‘crossed a red line’ with Taiwan remarks, Chinese foreign minister says - Politico",
+            "description": "Prime Minister Sanae Takaichi suggested Japan could intervene to protect Taiwan.",
+            "url": "https://www.politico.com/news/2025/11/23/japan-red-line-taiwan-china-00666217",
+            "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Fc0%2Fc2%2F508593ff44a3aadbc73be7bfb734%2Fsouth-korea-apec-29145.jpg",
+            "publishedAt": "2025-11-23T13:44:55Z",
+            "content": "The most senior Chinese official to address the tensions so far, Wang added that China must resolutely respond to Japans actions and that all countries have the responsibility to prevent the resurgen… [+1258 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Gerald Imray, Mogomotsi Magome",
+            "title": "The G20 summit in South Africa ends with the glaring absence of the US after Trump's boycott - AP News",
+            "description": "The Group of 20 summit in South Africa has ended with the glaring absence of the United States — the next country to lead the bloc. The Trump administration boycotted the two days of talks involving leaders of the world’s richest and top developing economies.…",
+            "url": "https://apnews.com/article/g20-south-africa-summit-world-leaders-76e36aa669a8e05ff5ad5495cc1252ed",
+            "urlToImage": "https://dims.apnews.com/dims4/default/f6be044/2147483647/strip/true/crop/8103x4558+0+423/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F62%2Fa8%2F6c56208c0b9c57a987cf09b07e11%2Fba412a9ff57b424caa94d1eb386182d9",
+            "publishedAt": "2025-11-23T13:31:00Z",
+            "content": "JOHANNESBURG (AP) The Group of 20 summit in South Africa ended Sunday with the glaring absence of the United States the next country to lead the bloc after the Trump administration boycotted the two … [+5112 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Mark Scolforo",
+            "title": "Christmas tree retailers find lots to like at a Pennsylvania wholesale auction - AP News",
+            "description": "Christmas went on the auction block this week in Pennsylvania farm country in the form of a giant Christmas tree sale. About 50,000 trees and a huge array of other seasonal items were bought and sold at the Buffalo Valley Produce Auction in Mifflinburg this w…",
+            "url": "https://apnews.com/article/christmas-tree-auction-pennsylvania-d09e6122ce801b3c60679794be69b313",
+            "urlToImage": "https://dims.apnews.com/dims4/default/c1cf17b/2147483647/strip/true/crop/8265x4649+0+430/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa3%2Fab%2Fe86f7434712b63b34ec8e88c4f95%2F2dcededff9ba4afc8d900e728f1a0455",
+            "publishedAt": "2025-11-23T13:02:00Z",
+            "content": "MIFFLINBURG, Pa. (AP) Christmas went on the auction block this week in Pennsylvania farm country, and there was no shortage of bidders.\r\nAbout 50,000 Christmas trees and enough wreaths, crafts and ot… [+2944 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "David Pierce",
+            "title": "The app that will instantly improve your Windows PC - The Verge",
+            "description": "Plus: Gemini 3, Deadpool VR, Kirby Air Riders, Ken Burns’ American Revolution, and more in this week’s Installer newsletter.",
+            "url": "https://www.theverge.com/tech/826971/raycast-kirby-comet-deadpool-vr-installer",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/Installer-106.png?quality=90&strip=all&crop=0%2C10.711631919237%2C100%2C78.576736161526&w=1200",
+            "publishedAt": "2025-11-23T13:00:00Z",
+            "content": "\u003Cul\u003E\u003Cli\u003E\u003C/li\u003E\u003Cli\u003E\u003C/li\u003E\u003Cli\u003E\u003C/li\u003E\u003C/ul\u003E\r\nPlus, in this weeks Installer: Deadpool in VR, Googles new LLM, Ken Burns new doc, and much more.\r\nPlus, in this weeks Installer: Deadpool in VR, Googles new LLM… [+10085 chars]"
+        },
+        {
+            "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": "Robert King, Simon J. Levien",
+            "title": "Republicans left the Obamacare cliff to the last minute. Some are regretting it. - Politico",
+            "description": "GOP lawmakers knew subsidies were expiring and premiums would spike, but no clear, conservative alternative emerged.",
+            "url": "https://www.politico.com/news/2025/11/23/republicans-obamacare-affordable-care-subsidies-trump-00665346",
+            "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Ff7%2F33%2Fea2749c446949e00e956b0797821%2Fgovernment-shutdown-35366.jpg",
+            "publishedAt": "2025-11-23T12:00:00Z",
+            "content": "I want all the Obamacare subsidies to be gone, retiring Sen. Thom Tillis (R-N.C.) told reporters Thursday. But this town is horrible about understanding the cliff nature to some of these decisions. W… [+7519 chars]"
+        },
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Gerrit De Vynck",
+            "title": "The surprising issue driving a wedge between Trump and his MAGA base - The Washington Post",
+            "description": "President Donald Trump’s attempt to block states from regulating AI sparked pushback from Republicans concerned the tech will displace workers and harm kids.",
+            "url": "https://www.washingtonpost.com/technology/2025/11/23/trump-maga-division-tech-ai/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/RJEEBOKZUXEZGDL3NHBHZZ4UK4.JPG&w=1440",
+            "publishedAt": "2025-11-23T11:36:56Z",
+            "content": "SAN FRANCISCO President Donald Trump faces an unexpected riftin the MAGA movement as Republican officials from statehouses to Capitol Hill warn his full-throated embrace of the tech industrys artific… [+108 chars]"
+        },
+        {
+            "source": {
+                "id": "al-jazeera-english",
+                "name": "Al Jazeera English"
+            },
+            "author": "Al Jazeera",
+            "title": "Norris, Piastri disqualified from Las Vegas GP, sparking F1 title race - Al Jazeera",
+            "description": "Lando Norris and Oscar Piastri disqualified for technical infringements, reigniting title battle with Max Verstappen.",
+            "url": "https://www.aljazeera.com/sports/2025/11/23/norris-piastri-disqualified-from-las-vegas-gp-sparking-f1-title-race",
+            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/11/AFP__20251123__2248003570__v2__HighRes__F1GrandPrixOfLasVegas-1763892616.jpg?resize=1920%2C1440",
+            "publishedAt": "2025-11-23T10:56:04Z",
+            "content": "Formula One championship leader Lando Norris and his McLaren teammate Oscar Piastri were disqualified on Sunday from the Las Vegas Grand Prix for technical infringements.\r\nThe skid blocks on both car… [+843 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NPR"
+            },
+            "author": "",
+            "title": "Here's why concerns about an AI bubble are bigger than ever - NPR",
+            "description": "Tech companies are pouring billions into AI chips and data centers. Increasingly, they are relying on debt and risky tactics. Financial analysts are worried there's a bubble that will soon pop.",
+            "url": "https://www.npr.org/2025/11/23/nx-s1-5615410/ai-bubble-nvidia-openai-revenue-bust-data-centers",
+            "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6570x3696+0+342/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff0%2F1c%2F8fb36bab4460ad7d24569abf921a%2Fgettyimages-2192213324.jpg",
+            "publishedAt": "2025-11-23T10:00:00Z",
+            "content": "Perhaps nobody embodies artificial intelligence mania quite like Jensen Huang, the chief executive of chip behemoth Nvidia, which has seen its value spike 300% in the last two years.\r\nA frothy time f… [+9968 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "Molly Gorman",
+            "title": "Wrinkles as 'badges of honour': How to embrace an ageing face - BBC",
+            "description": "Much like our other organs, our skin begins to age from the moment we are born. Here's how you can look after your skin while embracing an ageing face.",
+            "url": "https://www.bbc.com/future/article/20251121-how-to-embrace-an-ageing-face",
+            "urlToImage": "https://ychef.files.bbci.co.uk/624x351/p0mhtw1y.jpg",
+            "publishedAt": "2025-11-23T10:00:00Z",
+            "content": "Much like our other organs, our skin begins to age from the moment we are born. In a world obsessed with youthfulness, here's how you can look after your skin while embracing an ageing face.\r\nOn Moun… [+1745 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Neil Dutta",
+            "title": "The 7 ugly trends that show America is closer to a recession than you think - Business Insider",
+            "description": "From homebuilding to trucking, major parts of the US economy are in deep trouble. The weakness could drag the whole country into a recession.",
+            "url": "https://www.businessinsider.com/recession-signs-industries-downturn-layoffs-unemployment-real-estate-restaurants-2025-11",
+            "urlToImage": "https://i.insider.com/6920b476abd5e944effb4421?width=1200&format=jpeg",
+            "publishedAt": "2025-11-23T09:36:00Z",
+            "content": "When describing the health of the US economy, there is a temptation among economists, market analysts, and politicians to argue that the only true picture of our current situation is a sweeping portr… [+8007 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "JFK granddaughter shares terminal cancer diagnosis - BBC",
+            "description": "Tatiana Schlossberg, 35, says she was diagnosed shortly after giving birth in 2024 and has less than a year to live.",
+            "url": "https://www.bbc.com/news/articles/cpvdyg348pko",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2d43/live/ef259260-c7cf-11f0-b259-1f10e6cadd18.jpg",
+            "publishedAt": "2025-11-23T07:42:57Z",
+            "content": "The granddaughter of former US President John F Kennedy has announced her diagnosis with an aggressive form of cancer.\r\nTatiana Schlossberg said she has been given less than a year to live.\r\nThe 35-y… [+2884 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarieClaire.com"
+            },
+            "author": "Halie LeSavage",
+            "title": "The Best-Dressed Celebrities at the Formula 1 Las Vegas Grand Prix Hit the Style Jackpot - Marie Claire",
+            "description": "From Beyoncé's Louis Vuitton jacket to Cynthia Erivo's leather set, catch up on all the best looks.",
+            "url": "https://www.marieclaire.com/fashion/celebrity-style/las-vegas-grand-prix-best-dressed-2025/",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/he5hqGJkwLVBEF83kVSUxF-1920-80.jpg",
+            "publishedAt": "2025-11-23T06:25:56Z",
+            "content": "Before the lights went out over the Formula 1 Las Vegas Grand Prix starting line, the biggest news in the paddock wasn't about the drivers. All eyes were turned toward the entrance, where Beyoncé was… [+3484 chars]"
+        }
+    ]
+}

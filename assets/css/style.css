@@ -1,20 +1,4 @@
 /* LANDING PAGE */
-section .heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-section .heading .view-all {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-}
-
 /* LATES NEWS */
 #latestResult {
     display: grid;
@@ -129,11 +113,6 @@ section .heading .view-all {
     overflow: hidden;
 }
 
-p.author-info {
-    font-size: 0.8rem;
-    color: #666;
-    margin: 0;
-}
 /* WORLD CONTAINER END */
 
 /* TECH NEWS */

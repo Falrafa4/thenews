@@ -1,6 +1,10 @@
 const API_KEY = '58f5f6729c53404dacfad472b35ad500';
 const BASE_URL = 'https://newsapi.org/v2/';
 
+// MOST IMPORTANT OPTION!
+// News API has limitation in request
+let use_api = false;
+
 async function fetchAPI(url, loadingDivId, resultDivId) {
     const loadingDiv = document.getElementById(loadingDivId);
     const resultDiv = document.getElementById(resultDivId);
@@ -25,8 +29,13 @@ async function fetchAPI(url, loadingDivId, resultDivId) {
 }
 
 async function fetchLatestNews() {
-    // const url = `${BASE_URL}top-headlines?sources=bbc-news&pageSize=3&apiKey=${API_KEY}`;
-    const url = `mock/latest-news.json`; // Using mock data for testing
+    let url;
+    if (use_api) {
+        url = `${BASE_URL}top-headlines?sources=bbc-news&pageSize=3&apiKey=${API_KEY}`;
+    } else {
+        url = `/mock/latest-news.json`;
+    }
+
     const data = await fetchAPI(url, 'latestLoading', 'latestResult');
 
     if (data && data.articles) {
@@ -36,8 +45,13 @@ async function fetchLatestNews() {
 
 // fetch world news dan tampilkan langsung di dalam fungsi
 async function fetchWorldNews() {
-    // const url = `${BASE_URL}top-headlines?category=general&pageSize=4&apiKey=${API_KEY}`;
-    const url = `mock/world-news.json`; // Using mock data for testing
+    let url;
+    if (use_api) {
+        url = `${BASE_URL}top-headlines?category=general&pageSize=4&apiKey=${API_KEY}`;
+    } else {
+        url = `/mock/world-news.json`;
+    }
+
     const data = await fetchAPI(url, 'worldLoading', 'worldResult');
     const resultDiv = document.getElementById('worldResult');
 
@@ -52,7 +66,7 @@ async function fetchWorldNews() {
         const mainHTML = `
             <div class="news-left-col">
                 <div class="main-image-container">
-                    <img src="${mainArticle.urlToImage}" alt="${mainArticle.title}" class="main-bg-img">
+                    <img src="${ mainArticle.urlToImage ? mainArticle.urlToImage : 'https://placehold.co/300x200'}" alt="${mainArticle.title}" class="main-bg-img">
                 </div>
                 <a href="${mainArticle.url}" class="main-content-overlay" target="_blank" rel="noopener noreferrer">
                     <span class="date-badge">${formatDate(mainArticle.publishedAt)}</span>
@@ -66,7 +80,7 @@ async function fetchWorldNews() {
         sideArticle.forEach(article => {
             sideListHTML += `
                 <a href="${article.url}" class="world-container" target="_blank" rel="noopener noreferrer">
-                    <img src="${article.urlToImage}" alt="${article.title}">
+                    <img src="${ article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="${article.title}">
                     <div class="world-content">
                         <h2>${article.title}</h2>
                         <p class="author-info">${article.source.name} — ${formatDate(article.publishedAt)}</p>
@@ -81,8 +95,13 @@ async function fetchWorldNews() {
 
 // fetch technology news dan tampilkan langsung di dalam fungsi
 async function fetchTechNews() {
-    // const url = `${BASE_URL}top-headlines?category=technology&pageSize=4&apiKey=${API_KEY}`;
-    const url = `mock/tech-news.json`; // Using mock data for testing
+    let url;
+    if (use_api) {
+        url = `${BASE_URL}top-headlines?category=technology&pageSize=4&apiKey=${API_KEY}`;
+    } else {
+        url = `/mock/tech-news.json`;
+    }
+    
     const data = await fetchAPI(url, 'techLoading', 'techResult');
     const resultDiv = document.getElementById('techResult');
 
@@ -111,9 +130,13 @@ async function fetchTechNews() {
 }
 
 async function fetchPodcastNews() {
-    // const url = `${BASE_URL}top-headlines?category=entertainment&pageSize=4&apiKey=${API_KEY}`;
-    // const url = `${BASE_URL}everything?q=podcast&sortBy=publishedAt&pageSize=5&apiKey=${API_KEY}`;
-    const url = `mock/podcasts.json`; // Using mock data for testing
+    let url;
+    if (use_api) {
+        url = `${BASE_URL}everything?q=podcast&sources=cnn,bbc-news&pageSize=6&apiKey=${API_KEY}`;
+    } else {
+        url = `/mock/podcasts.json`;
+    }
+
     const data = await fetchAPI(url, 'podcastLoading', 'podcastResult');
     const resultDiv = document.getElementById('podcastResult');
 
@@ -153,10 +176,10 @@ async function displayNews(resultDivId, articles) {
     articles.forEach(article => {
         html += `
             <a href="${article.url}" class="latest-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage}" alt="Latest News Image">
+                <img src="${ article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="Latest News Image">
                 <div class="latest-content">
                     <h2>${article.title}</h2>
-                    <p>${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
+                    <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                 </div>
             </a>
         `;

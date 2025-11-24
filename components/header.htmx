@@ -27,9 +27,9 @@
     </div>
 
     <div class="header-bottom">
-        <div class="logo">
-            <img src="./assets/img/logo.svg" alt="Logo News">
-        </div>
+        <a href="/" class="logo">
+            <img src="/assets/img/logo.svg" alt="Logo News">
+        </a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/articles/world-news.html">World News</a></li>

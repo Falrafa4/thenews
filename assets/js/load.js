@@ -1,5 +1,5 @@
 // Load header and footer
-fetch('./components/header.htmx')
+fetch('/components/header.htmx')
     .then(response => response.text())
     .then(html => {
         const headerDiv = document.getElementById('header');
@@ -18,7 +18,7 @@ fetch('./components/header.htmx')
         document.getElementById("date").innerHTML = date.toLocaleDateString('en-US', options);
     });
 
-fetch('./components/footer.htmx')
+fetch('/components/footer.htmx')
     .then(response => response.text())
     .then(html => {
         const footerDiv = document.getElementById('footer');
