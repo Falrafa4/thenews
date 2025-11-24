@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 61,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Yahoo! Tech",
+            "title": "Black Friday 2025 deals on gadgets from Amazon, Apple, Bose and more are here at some of the lowest prices of the year - Yahoo! Tech",
+            "description": null,
+            "url": "https://tech.yahoo.com/deals/article/black-friday-2025-deals-on-gadgets-from-amazon-apple-bose-and-more-are-here-at-some-of-the-lowest-prices-of-the-year-225134618.html",
+            "urlToImage": null,
+            "publishedAt": "2025-11-22T22:07:51Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Matthew Adler",
+            "title": "Astro Bot DualSense Controller Is Down to Its Lowest Price Ever for Black Friday - IGN",
+            "description": "Now featuring even more smiles!",
+            "url": "https://www.ign.com/articles/astro-bot-dualsense-controller-deal-black-friday-2025",
+            "urlToImage": "https://assets-prd.ignimgs.com/2025/11/22/blackfriday2025-blogroll-7-1763837533853.jpg?width=1280&format=jpg&auto=webp&quality=80",
+            "publishedAt": "2025-11-22T20:02:47Z",
+            "content": "Playstation's Black Friday sale is now live, offering sweet deals like $100 off PS5 consoles, savings on dozens of games, and much more. It's rare that Sony discounts its limited edition DualSense co… [+2226 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Eurogamer.net"
+            },
+            "author": "Vikki Blake",
+            "title": "Microsoft could be forced into raising the price of Xbox consoles again given global RAM shortage, leaker claims - Eurogamer",
+            "description": "Microsoft is reportedly considering another price hike for Xbox consoles.",
+            "url": "https://www.eurogamer.net/microsoft-could-be-forced-into-raising-the-price-of-xbox-consoles-again-given-global-ram-shortage-leaker-claims",
+            "urlToImage": "https://assetsio.gnwcdn.com/series-x-header.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+            "publishedAt": "2025-11-22T17:58:02Z",
+            "content": "Microsoft is reportedly considering another price hike for Xbox consoles.\r\nAlthough Microsoft has already increased the price of its hardware twice this year - once in May, and then again for US play… [+1883 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BGR"
+            },
+            "author": "Ben Smith",
+            "title": "You Can Store Your Car Keys On Your iPhone - Here's How - bgr.com",
+            "description": "With Apple’s digital car key in Wallet, your iPhone connects to your vehicle via NFC, letting you unlock and start your car just by tapping your phone.",
+            "url": "https://www.bgr.com/2023150/how-to-add-car-key-apple-wallet-iphone-guide/",
+            "urlToImage": "https://www.bgr.com/img/gallery/you-can-store-your-car-keys-on-your-iphone-heres-how/l-intro-1762864847.jpg",
+            "publishedAt": "2025-11-22T17:17:00Z",
+            "content": "Imagine never needing your key fob again because your iPhone has become the key to your car. With the right vehicle and most recent version of iOS, you can walk up to your car, tap your door handle, … [+1453 chars]"
+        }
+    ]
+}

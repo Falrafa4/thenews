@@ -1,0 +1,84 @@
+{
+  "status": "ok",
+  "totalResults": 89,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "A New Generational Divide: Living with(out) the Bank of Mum and Dad (Eliza Filby)",
+      "description": "Historian Dr Eliza Filby on how young people can thrive without leaning on family wealth.",
+      "url": "https://www.bbc.co.uk/sounds/play/m002lfft",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0lgrqgm.jpg",
+      "publishedAt": "2025-10-30T06:00:00Z",
+      "content": "Available for over a year\r\nHow can Millennials, Gen Zs and Gen As thrive in a world where so much success depends on having access to the Bank of Mum and Dad? \r\nHistorian Dr Eliza Filby an expert in … [+1800 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Beyond Ultra-Processed Foods: Can Farmers Fix Our Health and the Planet?",
+      "description": "James Rebanks on how to build a secure, sustainable and healthy food system.",
+      "url": "https://www.bbc.co.uk/sounds/play/m002mbys",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0lgrqgm.jpg",
+      "publishedAt": "2025-11-20T06:00:00Z",
+      "content": "Available for over a year\r\nIs it possible to produce enough healthy food to feed the nation whilst also restoring nature? The farmer and best-selling author James Rebanks thinks it is but says there … [+2278 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Scottish Football Podcast",
+      "description": "Falkirk in focus, Celtic manager speculation and Greece on the horizon.",
+      "url": "https://www.bbc.co.uk/sounds/play/p0mg598r",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0mg599g.jpg",
+      "publishedAt": "2025-11-12T08:00:00Z",
+      "content": "Available for 29 days\r\nWe focus on Falkirk with the Bairns sitting fourth in the Premiership table, we look at the latest name in the frame for the Celtic manager job and start to preview Scotlands m… [+105 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Scottish Football Podcast",
+      "description": "All the reaction after Scotland's World Cup qualifying defeat in Greece.",
+      "url": "https://www.bbc.co.uk/sounds/play/p0mgyrqw",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0gf9mfx.jpg",
+      "publishedAt": "2025-11-15T22:55:00Z",
+      "content": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.\r\nFind out how to listen to other BBC stations"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Scottish Football Podcast",
+      "description": "Reaction to Sunday's Premiership matches at Tynecastle, Dens, Pittodrie and Celtic Park.",
+      "url": "https://www.bbc.co.uk/sounds/play/p0mfnt0t",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0gf9mfx.jpg",
+      "publishedAt": "2025-11-09T18:56:00Z",
+      "content": "Available for 29 days\r\nReaction to Sunday's Scottish Premiership matches including Hearts' draw with Dundee Utd, Rangers beating Dundee, Celtic's win over Kilmarnock and Aberdeen and Motherwell's dra… [+31 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Scottish Football Podcast",
+      "description": "Celtic and Rangers suffer Europa League defeats while Aberdeen draw in Cyprus.",
+      "url": "https://www.bbc.co.uk/sounds/play/p0mf6nt1",
+      "urlToImage": "https://ichef.bbci.co.uk/images/ic/1024x576/p0gf9mfx.jpg",
+      "publishedAt": "2025-11-06T23:12:00Z",
+      "content": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.\r\nFind out how to listen to other BBC stations"
+    }
+  ]
+}

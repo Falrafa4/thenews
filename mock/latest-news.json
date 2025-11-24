@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Rail fares to be frozen in England next year",
+            "description": "Regulated fares, which include season tickets and off-peak returns, will not see annual price rises for the first time in 30 years, the government announces.",
+            "url": "https://www.bbc.co.uk/news/articles/cwygx71g3n7o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1c5c/live/e182d190-c7cf-11f0-b259-1f10e6cadd18.jpg",
+            "publishedAt": "2025-11-23T03:37:23.794194Z",
+            "content": "The announcement comes days before the chancellor sets out the government's financial plans in the Budget, amid a focus on the cost of living. \r\nThe government also said the move is intended to \"dire… [+2857 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Could the Budget help turn Generation Z into generation debt?",
+            "description": "There's growing concern that current tax and spending policies help pensioners, but are unfair on younger generations.",
+            "url": "https://www.bbc.co.uk/news/articles/cvg15q2dgl7o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/20c9/live/5a2ee480-c7c6-11f0-8c06-f5d460985095.png",
+            "publishedAt": "2025-11-23T03:37:23.2786934Z",
+            "content": "Chancellor Rachel Reeves' upcoming Budget is expected to justify tax increases as a vital measure to keep the UK's national debt under control.\r\nSome have argued keeping the national debt down protec… [+1224 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Electric Car Grant : £1.3bn boost for EV scheme expected in Budget",
+            "description": "But it is also possible electric vehicle owners could face a new tax elsewhere in Wednesday's Budget.",
+            "url": "https://www.bbc.co.uk/news/articles/c39pk873wlwo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a64a/live/40aec880-c7e5-11f0-acfb-f36d79f179b6.jpg",
+            "publishedAt": "2025-11-23T03:37:21.7009625Z",
+            "content": "All new cars will have to be electric or hybrid from 2030, when a ban on the sale of new petrol and diesel cars comes into force.\r\nThe Electric Car Grant scheme, which provides a discount of up to £3… [+1911 chars]"
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FalNews</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-top">
+            <div class="date-container">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.3125 0C5.86623 0 4.45243 0.428871 3.2499 1.23238C2.04736 2.03589 1.1101 3.17794 0.556634 4.51413C0.00316839 5.85031 -0.141643 7.32061 0.140511 8.7391C0.422665 10.1576 1.11911 11.4605 2.14178 12.4832C3.16446 13.5059 4.46742 14.2023 5.88591 14.4845C7.30439 14.7666 8.77469 14.6218 10.1109 14.0684C11.4471 13.5149 12.5891 12.5776 13.3926 11.3751C14.1961 10.1726 14.625 8.75878 14.625 7.3125C14.623 5.37373 13.8519 3.51496 12.481 2.14404C11.11 0.773127 9.25127 0.00204737 7.3125 0ZM5.45836 10.125H9.16664C8.78907 11.4145 8.15625 12.5768 7.3125 13.4923C6.46875 12.5768 5.83594 11.4145 5.45836 10.125ZM5.20313 9C5.01657 7.88273 5.01657 6.74227 5.20313 5.625H9.42188C9.60844 6.74227 9.60844 7.88273 9.42188 9H5.20313ZM1.125 7.3125C1.12451 6.74187 1.20331 6.17394 1.35914 5.625H4.06336C3.89555 6.74374 3.89555 7.88126 4.06336 9H1.35914C1.20331 8.45106 1.12451 7.88313 1.125 7.3125ZM9.16664 4.5H5.45836C5.83594 3.21047 6.46875 2.0482 7.3125 1.13273C8.15625 2.0482 8.78907 3.21047 9.16664 4.5ZM10.5616 5.625H13.2659C13.5781 6.72834 13.5781 7.89666 13.2659 9H10.5616C10.7295 7.88126 10.7295 6.74374 10.5616 5.625ZM12.8229 4.5H10.3317C10.0447 3.37044 9.56258 2.29967 8.90719 1.33594C9.74451 1.56095 10.5255 1.95871 11.1998 2.50364C11.8742 3.04856 12.4271 3.7286 12.8229 4.5ZM5.71782 1.33594C5.06243 2.29967 4.58035 3.37044 4.29328 4.5H1.80211C2.19792 3.7286 2.75079 3.04856 3.42517 2.50364C4.09954 1.95871 4.8805 1.56095 5.71782 1.33594ZM1.80211 10.125H4.29328C4.58035 11.2546 5.06243 12.3253 5.71782 13.2891C4.8805 13.064 4.09954 12.6663 3.42517 12.1214C2.75079 11.5764 2.19792 10.8964 1.80211 10.125ZM8.90719 13.2891C9.56258 12.3253 10.0447 11.2546 10.3317 10.125H12.8229C12.4271 10.8964 11.8742 11.5764 11.1998 12.1214C10.5255 12.6663 9.74451 13.064 8.90719 13.2891Z"
+                        fill="#202124" />
+                </svg>
+                <span id="date"></span>
+            </div>
+
+            <div class="menu-container">
+                <div class="menu-link">
+                    <a href="#">The Menu</a>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.58578 6.58578L0.960782 12.2108C0.90852 12.263 0.846476 12.3045 0.778192 12.3328C0.709908 12.3611 0.636722 12.3756 0.562813 12.3756C0.488903 12.3756 0.415717 12.3611 0.347434 12.3328C0.27915 12.3045 0.217106 12.263 0.164844 12.2108C0.112582 12.1585 0.0711253 12.0965 0.0428413 12.0282C0.0145573 11.9599 0 11.8867 0 11.8128C0 11.7389 0.0145573 11.6657 0.0428413 11.5974C0.0711253 11.5292 0.112582 11.4671 0.164844 11.4148L5.39258 6.18781L0.164844 0.960781C0.0592959 0.855234 -1.11213e-09 0.71208 0 0.562813C1.11213e-09 0.413546 0.0592959 0.270392 0.164844 0.164844C0.270392 0.0592961 0.413546 1.11213e-09 0.562813 0C0.71208 -1.11213e-09 0.855234 0.0592961 0.960782 0.164844L6.58578 5.78984C6.63808 5.84208 6.67957 5.90412 6.70788 5.97241C6.73619 6.0407 6.75075 6.11389 6.75075 6.18781C6.75075 6.26173 6.73619 6.33493 6.70788 6.40322C6.67957 6.4715 6.63808 6.53354 6.58578 6.58578Z"
+                            fill="#202124" />
+                    </svg>
+                </div>
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.2782 16.819L14.197 12.7361C15.4207 11.1415 15.992 9.14114 15.795 7.14082C15.5981 5.14049 14.6476 3.28998 13.1364 1.96467C11.6253 0.639362 9.66654 -0.0615071 7.65762 0.0042403C5.64869 0.0699877 3.74 0.897428 2.31871 2.31871C0.897428 3.73999 0.0699877 5.64869 0.0042403 7.65761C-0.0615071 9.66654 0.639362 11.6253 1.96467 13.1364C3.28998 14.6476 5.14049 15.5981 7.14082 15.795C9.14114 15.992 11.1415 15.4207 12.7361 14.197L16.8207 18.2825C16.9166 18.3784 17.0305 18.4545 17.1558 18.5064C17.2812 18.5583 17.4155 18.5851 17.5512 18.5851C17.6868 18.5851 17.8212 18.5583 17.9465 18.5064C18.0718 18.4545 18.1857 18.3784 18.2816 18.2825C18.3776 18.1866 18.4537 18.0727 18.5056 17.9474C18.5575 17.822 18.5842 17.6877 18.5842 17.552C18.5842 17.4164 18.5575 17.282 18.5056 17.1567C18.4537 17.0314 18.3776 16.9175 18.2816 16.8216L18.2782 16.819ZM2.07984 7.92359C2.07984 6.7678 2.42257 5.63797 3.06469 4.67697C3.70681 3.71597 4.61948 2.96697 5.68728 2.52467C6.75509 2.08237 7.93007 1.96664 9.06365 2.19212C10.1972 2.41761 11.2385 2.97417 12.0557 3.79143C12.873 4.6087 13.4296 5.64995 13.6551 6.78353C13.8805 7.91711 13.7648 9.09209 13.3225 10.1599C12.8802 11.2277 12.1312 12.1404 11.1702 12.7825C10.2092 13.4246 9.07937 13.7673 7.92359 13.7673C6.37422 13.7657 4.88876 13.1496 3.79319 12.054C2.69762 10.9584 2.08143 9.47296 2.07984 7.92359Z"
+                        fill="#202124" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="Logo News">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">World News</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- content -->
+    <main>
+        <section class="latest-news">
+            <div class="heading">
+                <h1>Latest News</h1>
+                <a href="#" class="view-all">
+                    <span>View All</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_1)">
+                            <g clip-path="url(#clip1_0_1)">
+                                <g clip-path="url(#clip2_0_1)">
+                                    <path d="M6 10H14M14 10L10.5 6.5M14 10L10.5 13.5" stroke="#202124"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <circle cx="10" cy="10" r="9.5" stroke="#202124" />
+                        <defs>
+                            <clipPath id="clip0_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip1_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip2_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div id="latestLoading">Loading Latest News...</div>
+            <div id="latestResult"></div>
+        </section>
+
+        <section class="world-news">
+            <div class="heading">
+                <h1>World News</h1>
+                <a href="#" class="view-all">
+                    <span>View All</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_1)">
+                            <g clip-path="url(#clip1_0_1)">
+                                <g clip-path="url(#clip2_0_1)">
+                                    <path d="M6 10H14M14 10L10.5 6.5M14 10L10.5 13.5" stroke="#202124"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <circle cx="10" cy="10" r="9.5" stroke="#202124" />
+                        <defs>
+                            <clipPath id="clip0_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip1_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip2_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div id="worldLoading">Loading World News</div>
+            <div id="worldResult"></div>
+        </section>
+
+        <section class="tech-news">
+            <div class="heading">
+                <h1>Technology News</h1>
+                <a href="#" class="view-all">
+                    <span>View All</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_1)">
+                            <g clip-path="url(#clip1_0_1)">
+                                <g clip-path="url(#clip2_0_1)">
+                                    <path d="M6 10H14M14 10L10.5 6.5M14 10L10.5 13.5" stroke="#202124"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <circle cx="10" cy="10" r="9.5" stroke="#202124" />
+                        <defs>
+                            <clipPath id="clip0_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip1_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip2_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div id="techLoading">Loading Tech News</div>
+            <div id="techResult"></div>
+        </section>
+
+        <section class="podcasts">
+            <div class="heading">
+                <h1>Podcasts</h1>
+                <a href="#" class="view-all">
+                    <span>View All</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_1)">
+                            <g clip-path="url(#clip1_0_1)">
+                                <g clip-path="url(#clip2_0_1)">
+                                    <path d="M6 10H14M14 10L10.5 6.5M14 10L10.5 13.5" stroke="#202124"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </g>
+                        <circle cx="10" cy="10" r="9.5" stroke="#202124" />
+                        <defs>
+                            <clipPath id="clip0_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip1_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                            <clipPath id="clip2_0_1">
+                                <rect width="10" height="8" fill="white" transform="translate(5 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <!-- Podcast content can be added here -->
+            <div id="podcastLoading"></div>
+            <div id="podcastResult"></div>
+        </section>
+    </main>
+    <!-- content end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <img src="./assets/img/logo.svg" alt="Logo News">
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.33333 2.57583V15.5833C4.29917 15.5833 1.83333 13.1725 1.83333 10.2025C1.83333 8.7725 2.40167 7.425 3.4375 6.4075L7.33333 2.57583ZM2.15417 5.09667C0.825 6.4075 0 8.21333 0 10.2025C0 14.19 3.28167 17.4167 7.33333 17.4167C11.385 17.4167 14.6667 14.19 14.6667 10.2025C14.6667 8.21333 13.8417 6.4075 12.5125 5.09667L7.33333 0L2.15417 5.09667Z"
+                        fill="#202124" />
+                </svg>
+                <span>Copyright © 2024 - The News - All rights reserved</span>
+            </div>
+            <div class="footer-links">
+                <img src="./assets/img/instagram.svg" alt="Instagram">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn">
+                <img src="./assets/img/youtube.svg" alt="YouTube">
+                <img src="./assets/img/twitter.svg" alt="Twitter">
+                <img src="./assets/img/reddit.svg" alt="Reddit">
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchLatestNews();
+            fetchWorldNews();
+            fetchTechNews();
+            fetchPodcastNews();
+        });
+
+        const date = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("date").innerHTML = date.toLocaleDateString('en-US', options);
+    </script>
+</body>
+
+</html>

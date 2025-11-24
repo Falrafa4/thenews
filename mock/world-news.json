@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 35,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "Cameron Salerno",
+            "title": "College football scores, live updates and highlights in Week 13 - CBS Sports",
+            "description": "NCAA football scores, live updates and highlights from the full slate of Week 13 action on Saturday",
+            "url": "https://www.cbssports.com/college-football/news/college-football-scores-live-updates-schedule-week-13-ncaa-top-25-games-today/live/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2025/11/23/c52ca119-30f7-43e9-9fa6-10470f66c4b2/thumbnail/1200x675/a3bc1c74cec67953d117da8b6af39df2/tenn-picks-1.jpg",
+            "publishedAt": "2025-11-23T01:02:01Z",
+            "content": "FINAL: No. 8 Oklahoma 17, No. 22 Missouri 6\r\nIt wasn't pretty football in Norman, but it was winning football for the No. 8 Sooners, as they are now just one win away from a College Football Playoff … [+1708 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "OregonLive"
+            },
+            "author": "James Crepea | The Oregonian/OregonLive",
+            "title": "What Dan Lanning said after Oregon beats USC - OregonLive.com",
+            "description": "Follow live updates from Lanning's postgame press conference",
+            "url": "https://www.oregonlive.com/ducks/2025/11/live-updates-dan-lanning-postgame-press-conference-after-oregon-beats-usc.html",
+            "urlToImage": "https://www.oregonlive.com/resizer/v2/CZIPRIH74JG5ZOUADCGCNW7FMQ.jpg?auth=257081ca150bce57f2924d72b316c726ccd54bf4ce4162ad2bc6dd5b1b5e3932&width=1280&smart=true&quality=90",
+            "publishedAt": "2025-11-23T00:50:00Z",
+            "content": "EUGENE No. 7 Oregon defeated No. 15 USC 42-27 Saturday afternoon at Autzen Stadium. \r\nDan Lanning recapped the 10th win of the season for the Ducks (10-1, 7-1 Big Ten), who travel to Washington next … [+1595 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "COP30 - Five key takeaways from a deeply divisive climate summit - BBC",
+            "description": "What did we learn from a climate summit that ended in a deal with no new mention of fossil fuels?",
+            "url": "https://www.bbc.com/news/articles/cp84m16mdm1o",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5754/live/fb183cf0-c7f5-11f0-975d-d5fa2587428e.jpg",
+            "publishedAt": "2025-11-23T00:10:18Z",
+            "content": "Justin Rowlatt,Climate Editor and \r\nMatt McGrath,Environment correspondent\r\nCOP30 President President André Corrêa do Lago at a critical moment in the final plenary session of talks\r\nIn three decades… [+8601 chars]"
+        }
+    ]
+}
