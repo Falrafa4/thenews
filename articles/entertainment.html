@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The News - World</title>
+    <title>The News - Entertainment</title>
     <link rel="stylesheet" href="/assets/css/article.css">
     <link rel="stylesheet" href="/assets/css/global.css">
     
@@ -25,9 +25,9 @@
 
     <!-- content -->
     <main>
-        <section class="world-news">
+        <section class="entertainment-news">
             <div class="heading">
-                <h1>World News</h1>
+                <h1>Entertainment News</h1>
                 <a href="#" class="view-all">
                     <span>View All</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,8 +54,8 @@
                     </svg>
                 </a>
             </div>
-            <div id="worldLoading">Loading World News...</div>
-            <div id="worldResult" class="result"></div>
+            <div id="entertainmentLoading">Loading entertainment News...</div>
+            <div id="entertainmentResult" class="result"></div>
         </section>
     </main>
     <!-- content end -->
@@ -68,11 +68,11 @@
     <script src="/assets/js/load.js"></script>
     <script src="/assets/js/fetch.js"></script>
     <script>
-        url = `${BASE_URL}top-headlines?category=general&pageSize=15&apiKey=${API_KEY}`;
-        mock = `/mock/world-news-all.json`;
+        url = `${BASE_URL}top-headlines?category=entertainment&pageSize=15&apiKey=${API_KEY}`;
+        mock = `/mock/entertainment-news-all.json`;
 
         document.addEventListener("DOMContentLoaded", function () {
-            fetchAllNews(url, mock, 'worldLoading', 'worldResult');
+            fetchAllNews(url, mock, 'entertainmentLoading', 'entertainmentResult');
         });
     </script>
 </body>

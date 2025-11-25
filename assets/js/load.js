@@ -16,6 +16,15 @@ fetch('/components/header.htmx')
         const date = new Date();
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         document.getElementById("date").innerHTML = date.toLocaleDateString('en-US', options);
+
+        // Cek path lalu tambahkan class active
+        const path = window.location.pathname;
+        const navlink = document.querySelectorAll('.nav-link');
+        navlink.forEach(link => {
+            if (link.getAttribute('href') === path) {
+                link.classList.add('active');
+            }
+        });
     });
 
 fetch('/components/footer.htmx')

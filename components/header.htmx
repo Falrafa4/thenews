@@ -32,14 +32,13 @@
         </a>
         <nav>
             <ul class="nav-links">
-                <li><a href="/articles/world-news.html">World News</a></li>
-                <li><a href="/articles/business.html">Business</a></li>
-                <li><a href="/articles/entertainment.html">Entertainment</a></li>
-                <li><a href="/articles/general.html">General</a></li>
-                <li><a href="/articles/health.html">Health</a></li>
-                <li><a href="/articles/science.html">Science</a></li>
-                <li><a href="/articles/sports.html">Sports</a></li>
-                <li><a href="/articles/technology.html">Technology</a></li>
+                <li><a href="/articles/world-news.html" class="nav-link">World News</a></li>
+                <li><a href="/articles/business.html" class="nav-link">Business</a></li>
+                <li><a href="/articles/technology.html" class="nav-link">Technology</a></li>
+                <li><a href="/articles/health.html" class="nav-link">Health</a></li>
+                <li><a href="/articles/sports.html" class="nav-link">Sports</a></li>
+                <li><a href="/articles/entertainment.html" class="nav-link">Entertainment</a></li>
+                <li><a href="/articles/podcasts.html" class="nav-link">Podcast</a></li>
             </ul>
         </nav>
     </div>

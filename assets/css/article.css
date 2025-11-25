@@ -1,11 +1,11 @@
 /* WORLD NEWS */
-#worldResult {
+.result {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2rem 1.5rem;
 }
 
-#worldResult img {
+.result img {
     width: 100%;
     height: auto;
     aspect-ratio: 5/3;
@@ -13,14 +13,14 @@
     display: block;
 }
 
-#worldResult .world-container,
-#worldResult .world-content {
+.result .world-container,
+.result .world-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#worldResult .world-content h2 {
+.result .world-content h2 {
     font-size: 1.2rem;
     font-weight: 400;
 }

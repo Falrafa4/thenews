@@ -66,7 +66,7 @@ async function fetchWorldNews() {
         const mainHTML = `
             <div class="news-left-col">
                 <div class="main-image-container">
-                    <img src="${ mainArticle.urlToImage ? mainArticle.urlToImage : 'https://placehold.co/300x200'}" alt="${mainArticle.title}" class="main-bg-img">
+                    <img src="${ mainArticle.urlToImage ? mainArticle.urlToImage : '/assets/img/placeholder.jpeg'}" alt="${mainArticle.title}" class="main-bg-img">
                 </div>
                 <a href="${mainArticle.url}" class="main-content-overlay" target="_blank" rel="noopener noreferrer">
                     <span class="date-badge">${formatDate(mainArticle.publishedAt)}</span>
@@ -80,7 +80,7 @@ async function fetchWorldNews() {
         sideArticle.forEach(article => {
             sideListHTML += `
                 <a href="${article.url}" class="world-container" target="_blank" rel="noopener noreferrer">
-                    <img src="${ article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="${article.title}">
+                    <img src="${ article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="${article.title}">
                     <div class="world-content">
                         <h2>${article.title}</h2>
                         <p class="author-info">${article.source.name} — ${formatDate(article.publishedAt)}</p>
@@ -116,7 +116,7 @@ async function fetchTechNews() {
         data.articles.forEach(article => {
             html += `
             <a href="${article.url}" class="tech-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="tech News Image">
+                <img src="${article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="tech News Image">
                 <div class="tech-content">
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                     <h2>${article.title}</h2>
@@ -151,7 +151,7 @@ async function fetchPodcastNews() {
         data.articles.forEach(article => {
             html += `
             <a href="${article.url}" class="podcast-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="podcast News Image">
+                <img src="${article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="podcast News Image">
                 <div class="podcast-content">
                     <h2>${article.title}</h2>
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
@@ -176,7 +176,7 @@ async function displayNews(resultDivId, articles) {
     articles.forEach(article => {
         html += `
             <a href="${article.url}" class="latest-container" target="_blank" rel="noopener noreferrer">
-                <img src="${ article.urlToImage ? article.urlToImage : 'https://placehold.co/300x200'}" alt="Latest News Image">
+                <img src="${ article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="Latest News Image">
                 <div class="latest-content">
                     <h2>${article.title}</h2>
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>

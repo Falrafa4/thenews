@@ -29,6 +29,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.nav-link.active {
+    font-weight: 600;
+    color: #E63946;
+}
+
 p.author-info {
     font-size: 0.8rem;
     color: #666;
@@ -37,6 +42,10 @@ p.author-info {
 
 img {
     border-radius: 8px;
+}
+
+section img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
