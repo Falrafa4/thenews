@@ -197,3 +197,72 @@ footer .footer-links img {
     border-radius: 0;
 }
 /* FOOTER END */
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem !important;
+    }
+
+    a.logo img {
+        width: 200px;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header-bottom ul.nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #latestResult,
+    #worldResult,
+    #techResult,
+    #podcastResult {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+    }
+    
+    .result {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+
+    }
+
+    .result img {
+        width: 100% !important;
+    }
+
+    .world-container img {
+        width: 50%;
+    }
+
+    .news-left-col {
+        height: fit-content !important;
+    }
+
+    .main-content-overlay {
+        position: static !important;
+        height: auto !important;
+        background-color: transparent !important;
+    }
+
+    footer .footer-top {
+        text-align: center;
+    }
+
+    footer .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
