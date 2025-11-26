@@ -2,7 +2,7 @@
 // News API has limitation in request
 import { fetchAPI } from '/assets/js/script.js';
 
-let use_api = true;
+let use_api = false;
 
 export async function fetchAllNews(url, mock, loadingId, resultId) {
     let real_url;

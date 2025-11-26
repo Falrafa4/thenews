@@ -3,7 +3,7 @@ import { API_KEY, BASE_URL } from '/assets/js/config.js';
 
 // MOST IMPORTANT OPTION!
 // News API has limitation in request
-let use_api = true;
+let use_api = false;
 
 export async function fetchAPI(url, loadingDivId, resultDivId) {
     const loadingDiv = document.getElementById(loadingDivId);
