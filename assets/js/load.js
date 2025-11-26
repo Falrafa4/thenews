@@ -40,7 +40,7 @@ fetch('/components/header.html')
         });
     });
 
-fetch('/components/footer.htmx')
+fetch('/components/footer.html')
     .then(response => response.text())
     .then(html => {
         const footerDiv = document.getElementById('footer');
