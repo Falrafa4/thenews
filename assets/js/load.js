@@ -1,5 +1,5 @@
 // Load header and footer
-fetch('/components/header.htmx')
+fetch('/components/header.html')
     .then(response => response.text())
     .then(html => {
         const headerDiv = document.getElementById('header');
@@ -34,7 +34,7 @@ fetch('/components/header.htmx')
             if (event.key === 'Enter') {
                 const newKeyword = event.target.value.trim();
                 if (newKeyword) {
-                    window.location.href = `search.html?q=${encodeURIComponent(newKeyword)}`;
+                    window.location.href = `/search.html?q=${encodeURIComponent(newKeyword)}`;
                 }
             }
         });

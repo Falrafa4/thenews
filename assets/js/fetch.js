@@ -2,7 +2,7 @@
 // News API has limitation in request
 import { fetchAPI } from '/assets/js/script.js';
 
-let use_api = false;
+let use_api = true;
 
 export async function fetchAllNews(url, mock, loadingId, resultId) {
     let real_url;
@@ -27,7 +27,7 @@ export async function fetchAllNews(url, mock, loadingId, resultId) {
         let proxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(article.urlToImage)}`;
         html += `
             <a href="${article.url}" class="world-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="${article.title}" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
+                <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpg'}" alt="${article.title}" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpg';">
                 <div class="world-content">
                     <h2>${article.title}</h2>
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
