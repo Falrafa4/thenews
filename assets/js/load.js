@@ -25,6 +25,19 @@ fetch('/components/header.htmx')
                 link.classList.add('active');
             }
         });
+
+        document.getElementById('searchIcon').addEventListener('click', () => {
+            window.location.href = `/search.html?q=${encodeURIComponent(document.getElementById('searchInput').value)}`;
+        });
+
+        document.getElementById('searchInput').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                const newKeyword = event.target.value.trim();
+                if (newKeyword) {
+                    window.location.href = `search.html?q=${encodeURIComponent(newKeyword)}`;
+                }
+            }
+        });
     });
 
 fetch('/components/footer.htmx')

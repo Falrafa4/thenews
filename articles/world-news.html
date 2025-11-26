@@ -64,12 +64,14 @@
     <div id="footer"></div>
     <!-- footer end -->
 
-    <script src="/assets/js/script.js"></script>
     <script src="/assets/js/load.js"></script>
-    <script src="/assets/js/fetch.js"></script>
-    <script>
-        url = `${BASE_URL}top-headlines?category=general&pageSize=15&apiKey=${API_KEY}`;
-        mock = `/mock/world-news-all.json`;
+    <script type="module">
+        // API configuration
+        import { API_KEY, BASE_URL } from '/assets/js/config.js';
+        import { fetchAllNews } from '/assets/js/fetch.js';
+
+        let url = `${BASE_URL}top-headlines?category=general&pageSize=15&apiKey=${API_KEY}`;
+        let mock = `/mock/world-news-all.json`;
 
         document.addEventListener("DOMContentLoaded", function () {
             fetchAllNews(url, mock, 'worldLoading', 'worldResult');

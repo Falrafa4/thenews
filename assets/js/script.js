@@ -1,11 +1,11 @@
-const API_KEY = '58f5f6729c53404dacfad472b35ad500';
-const BASE_URL = 'https://newsapi.org/v2/';
+// Import API configuration
+import { API_KEY, BASE_URL } from '/assets/js/config.js';
 
 // MOST IMPORTANT OPTION!
 // News API has limitation in request
-let use_api = false;
+let use_api = true;
 
-async function fetchAPI(url, loadingDivId, resultDivId) {
+export async function fetchAPI(url, loadingDivId, resultDivId) {
     const loadingDiv = document.getElementById(loadingDivId);
     const resultDiv = document.getElementById(resultDivId);
 
@@ -28,7 +28,7 @@ async function fetchAPI(url, loadingDivId, resultDivId) {
     }
 }
 
-async function fetchLatestNews() {
+export async function fetchLatestNews() {
     let url;
     if (use_api) {
         url = `${BASE_URL}top-headlines?sources=bbc-news&pageSize=3&apiKey=${API_KEY}`;
@@ -44,10 +44,10 @@ async function fetchLatestNews() {
 }
 
 // fetch world news dan tampilkan langsung di dalam fungsi
-async function fetchWorldNews() {
+export async function fetchWorldNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}top-headlines?category=general&pageSize=4&apiKey=${API_KEY}`;
+        url = `${BASE_URL}top-headlines?category=general&pageSize=3&apiKey=${API_KEY}`;
     } else {
         url = `/mock/world-news.json`;
     }
@@ -58,29 +58,36 @@ async function fetchWorldNews() {
     if (data && data.articles && data.articles.length > 0) {
         const articles = data.articles;
         const mainArticle = articles[0];
-        const sideArticle = articles.slice(1, 4);
+        const sideArticle = articles.slice(1, 3);
 
         const formatDate = (dateString) => new Date(mainArticle.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
         // HTML main article (left)
+        let mainProxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(mainArticle.urlToImage)}`;
+
         const mainHTML = `
             <div class="news-left-col">
                 <div class="main-image-container">
-                    <img src="${ mainArticle.urlToImage ? mainArticle.urlToImage : '/assets/img/placeholder.jpeg'}" alt="${mainArticle.title}" class="main-bg-img">
+                    <img src="${mainArticle.urlToImage ? mainProxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="${mainArticle.title}" class="main-bg-img" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
+                    <a href="${mainArticle.url}" class="main-content-overlay" target="_blank" rel="noopener noreferrer">
+                        <span class="date-badge">${formatDate(mainArticle.publishedAt)}</span>
+                        <h3>${mainArticle.title}</h3>
+                        <p class="author-info">by ${mainArticle.author || mainArticle.source.name}</p>
+                    </a>
                 </div>
-                <a href="${mainArticle.url}" class="main-content-overlay" target="_blank" rel="noopener noreferrer">
-                    <span class="date-badge">${formatDate(mainArticle.publishedAt)}</span>
-                    <h3>${mainArticle.title}</h3>
-                    <p class="author-info">by ${mainArticle.author || mainArticle.source.name}</p>
-                </a>
             </div>
         `;
 
         let sideListHTML = '';
+
+        console.log(sideArticle);
         sideArticle.forEach(article => {
+            console.log(article);
+            let proxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(article.urlToImage)}`;
+
             sideListHTML += `
                 <a href="${article.url}" class="world-container" target="_blank" rel="noopener noreferrer">
-                    <img src="${ article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="${article.title}">
+                    <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="${article.title}" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
                     <div class="world-content">
                         <h2>${article.title}</h2>
                         <p class="author-info">${article.source.name} — ${formatDate(article.publishedAt)}</p>
@@ -89,19 +96,21 @@ async function fetchWorldNews() {
             `;
         });
 
+        console.log(mainHTML + sideListHTML);
+
         resultDiv.innerHTML = mainHTML + sideListHTML;
     }
 }
 
 // fetch technology news dan tampilkan langsung di dalam fungsi
-async function fetchTechNews() {
+export async function fetchTechNews() {
     let url;
     if (use_api) {
         url = `${BASE_URL}top-headlines?category=technology&pageSize=4&apiKey=${API_KEY}`;
     } else {
         url = `/mock/tech-news.json`;
     }
-    
+
     const data = await fetchAPI(url, 'techLoading', 'techResult');
     const resultDiv = document.getElementById('techResult');
 
@@ -114,9 +123,10 @@ async function fetchTechNews() {
         let html = '';
 
         data.articles.forEach(article => {
+            let proxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(article.urlToImage)}`;
             html += `
             <a href="${article.url}" class="tech-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="tech News Image">
+                <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="tech News Image" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
                 <div class="tech-content">
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                     <h2>${article.title}</h2>
@@ -129,7 +139,7 @@ async function fetchTechNews() {
     }
 }
 
-async function fetchPodcastNews() {
+export async function fetchPodcastNews() {
     let url;
     if (use_api) {
         url = `${BASE_URL}everything?q=podcast&sources=cnn,bbc-news&pageSize=6&apiKey=${API_KEY}`;
@@ -149,9 +159,10 @@ async function fetchPodcastNews() {
         let html = '';
 
         data.articles.forEach(article => {
+            let proxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(article.urlToImage)}`;
             html += `
             <a href="${article.url}" class="podcast-container" target="_blank" rel="noopener noreferrer">
-                <img src="${article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="podcast News Image">
+                <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="podcast News Image" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
                 <div class="podcast-content">
                     <h2>${article.title}</h2>
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
@@ -164,7 +175,7 @@ async function fetchPodcastNews() {
     }
 }
 
-async function displayNews(resultDivId, articles) {
+export async function displayNews(resultDivId, articles) {
     const resultDiv = document.getElementById(resultDivId);
     if (!articles || articles.length === 0) {
         resultDiv.innerHTML = '<p>No article data found.</p>';
@@ -174,9 +185,10 @@ async function displayNews(resultDivId, articles) {
     let html = '';
 
     articles.forEach(article => {
+        let proxiedImageUrl = `https://wsrv.nl/?url=${encodeURIComponent(article.urlToImage)}`;
         html += `
             <a href="${article.url}" class="latest-container" target="_blank" rel="noopener noreferrer">
-                <img src="${ article.urlToImage ? article.urlToImage : '/assets/img/placeholder.jpeg'}" alt="Latest News Image">
+                <img src="${article.urlToImage ? proxiedImageUrl : '/assets/img/placeholder.jpeg'}" alt="Latest News Image" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpeg';">
                 <div class="latest-content">
                     <h2>${article.title}</h2>
                     <p class="author-info">${article.source.name} — ${new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</p>

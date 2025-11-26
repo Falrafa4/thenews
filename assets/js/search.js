@@ -1,20 +1,11 @@
-// MOST IMPORTANT OPTION!
-// News API has limitation in request
+import { BASE_URL, API_KEY } from '/assets/js/config.js';
 import { fetchAPI } from '/assets/js/script.js';
 
-let use_api = true;
+export async function searchNews(query) {
+    let url = `${BASE_URL}everything?q=${encodeURIComponent(query)}&pageSize=9&apiKey=${API_KEY}`;
 
-export async function fetchAllNews(url, mock, loadingId, resultId) {
-    let real_url;
-
-    if (use_api) {
-        real_url = url;
-    } else {
-        real_url = mock // Using mock data for testing
-    }
-
-    const data = await fetchAPI(real_url, loadingId, resultId);
-    const resultDiv = document.getElementById(resultId);
+    const data = await fetchAPI(url, 'searchLoading', 'searchResult');
+    const resultDiv = document.getElementById('searchResult');
 
     if (!data.articles || data.articles.length === 0) {
         resultDiv.innerHTML = '<p>No article data found.</p>';
@@ -34,6 +25,7 @@ export async function fetchAllNews(url, mock, loadingId, resultId) {
                 </div>
             </a>
         `;
-    });
+    })
+
     resultDiv.innerHTML = html;
 }

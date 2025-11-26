@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The News - Search</title>
+    <link rel="stylesheet" href="/assets/css/article.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header"></div>
+    <!-- header end -->
+
+    <!-- content -->
+    <main>
+        <section class="search-news">
+            <div class="heading">
+                <h1>Search For: <span id="searchKeyword"></span></h1>
+            </div>
+            <div id="searchLoading">Loading Search News...</div>
+            <div id="searchResult" class="result"></div>
+        </section>
+    </main>
+    <!-- content end -->
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <!-- footer end -->
+
+    <script src="/assets/js/load.js"></script>
+    <script type="module">
+        // import { BASE_URL, API_KEY } from '/assets/js/config.js';
+        // import { fetchAPI } from '/assets/js/script.js';
+    </script>
+    <!-- <script src="/assets/js/search.js"></script> -->
+    <script type="module">
+        import { searchNews } from '/assets/js/search.js';
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const keyword = urlParams.get('q') || '';
+
+            if (!keyword) {
+                document.getElementById('searchLoading').innerText = 'Please enter a search keyword.';
+                return;
+            }
+
+            document.getElementById('searchKeyword').innerText = keyword;
+            searchNews(keyword);
+        });
+    </script>
+</body>
+
+</html>

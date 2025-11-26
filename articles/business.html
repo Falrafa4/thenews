@@ -7,7 +7,7 @@
     <title>The News - Business</title>
     <link rel="stylesheet" href="/assets/css/article.css">
     <link rel="stylesheet" href="/assets/css/global.css">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon">
 
@@ -64,13 +64,15 @@
     <div id="footer"></div>
     <!-- footer end -->
 
-    <script src="/assets/js/script.js"></script>
     <script src="/assets/js/load.js"></script>
-    <script src="/assets/js/fetch.js"></script>
-    <script>
-        url = `${BASE_URL}top-headlines?category=business&pageSize=15&apiKey=${API_KEY}`;
-        mock = `/mock/business-news-all.json`;
-        
+    <script type="module">
+        // API configuration
+        import { API_KEY, BASE_URL } from '/assets/js/config.js';
+        import { fetchAllNews } from '/assets/js/fetch.js';
+
+        let url = `${BASE_URL}top-headlines?category=business&pageSize=15&apiKey=${API_KEY}`;
+        let mock = `/mock/business-news-all.json`;
+
         document.addEventListener("DOMContentLoaded", function () {
             fetchAllNews(url, mock, 'businessLoading', 'businessResult');
         });

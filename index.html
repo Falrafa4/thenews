@@ -7,7 +7,7 @@
     <title>The News - Homepage</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/global.css">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon">
 
@@ -164,9 +164,16 @@
     <div id="footer"></div>
     <!-- footer end -->
 
-    <script src="/assets/js/script.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
     <script src="/assets/js/load.js"></script>
-    <script>
+    <script type="module">
+        import {
+            fetchLatestNews,
+            fetchWorldNews,
+            fetchTechNews,
+            fetchPodcastNews
+        } from "/assets/js/script.js";
+
         document.addEventListener("DOMContentLoaded", function () {
             fetchLatestNews();
             fetchWorldNews();
