@@ -67,7 +67,7 @@ export async function fetchLatestNews() {
 export async function fetchWorldNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}top-headlines?category=general&pageSize=4&apiKey=${API_KEY}`;
+        url = `${BASE_URL}top-headlines?category=general&apiKey=${API_KEY}`;
     } else {
         url = `/mock/world-news.json`;
     }
