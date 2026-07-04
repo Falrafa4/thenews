@@ -2,7 +2,7 @@ import { BASE_URL, API_KEY } from '/assets/js/config.js';
 import { fetchAPI } from '/assets/js/script.js';
 
 export async function searchNews(query) {
-    let url = `${BASE_URL}everything?q=${encodeURIComponent(query)}&pageSize=9&apiKey=${API_KEY}`;
+    let url = `${BASE_URL}?endpoint=everything&q=${encodeURIComponent(query)}&pageSize=9`;
 
     const data = await fetchAPI(url, 'searchLoading', 'searchResult');
     const resultDiv = document.getElementById('searchResult');

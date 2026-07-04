@@ -45,7 +45,7 @@
         import { API_KEY, BASE_URL } from '/assets/js/config.js';
         import { fetchAllNews } from '/assets/js/fetch.js';
 
-        let url = `${BASE_URL}top-headlines?category=technology&pageSize=15&apiKey=${API_KEY}`;
+        let url = `${BASE_URL}?endpoint=top-headlines&category=technology&pageSize=15`;
         let mock = `/mock/tech-news-all.json`;
 
         document.addEventListener("DOMContentLoaded", function () {

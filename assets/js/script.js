@@ -31,7 +31,7 @@ export async function fetchAPI(url, loadingDivId, resultDivId) {
 export async function fetchLatestNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}top-headlines?sources=bbc-news&pageSize=3&apiKey=${API_KEY}`;
+        url = `${BASE_URL}?endpoint=top-headlines&sources=bbc-news&pageSize=3`;
     } else {
         url = `/mock/latest-news.json`;
     }
@@ -67,7 +67,7 @@ export async function fetchLatestNews() {
 export async function fetchWorldNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}top-headlines?category=general&apiKey=${API_KEY}`;
+        url = `${BASE_URL}?endpoint=top-headlines&category=general`;
     } else {
         url = `/mock/world-news.json`;
     }
@@ -126,7 +126,7 @@ export async function fetchWorldNews() {
 export async function fetchTechNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}top-headlines?category=technology&pageSize=4&apiKey=${API_KEY}`;
+        url = `${BASE_URL}?endpoint=top-headlines&category=technology&pageSize=4`;
     } else {
         url = `/mock/tech-news.json`;
     }
@@ -162,7 +162,7 @@ export async function fetchTechNews() {
 export async function fetchPodcastNews() {
     let url;
     if (use_api) {
-        url = `${BASE_URL}everything?q=podcast&sources=cnn,bbc-news&pageSize=6&apiKey=${API_KEY}`;
+        url = `${BASE_URL}?endpoint=everything&q=podcast&sources=cnn,bbc-news&pageSize=6`;
     } else {
         url = `/mock/podcasts.json`;
     }
@@ -197,4 +197,16 @@ export async function fetchPodcastNews() {
 
 export async function displayNews(resultDivId, articles) {
 
+}
+
+/**
+ * Contoh fungsi fetchNews(category) menggunakan reverse proxy lokal
+ * Berguna untuk mengambil berita berdasarkan kategori dengan aman
+ * 
+ * @param {string} category - Kategori berita (general, technology, business, sports, entertainment, health, science)
+ */
+export async function fetchNews(category) {
+    const url = `${BASE_URL}?endpoint=top-headlines&category=${category}`;
+    // Memanggil fetchAPI (pastikan ID loading dan result disesuaikan di HTML Anda)
+    return await fetchAPI(url, 'newsLoading', 'newsResult');
 }
