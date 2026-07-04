@@ -20,7 +20,7 @@ if (!defined('SECURE_ACCESS')) {
 
 return [
     // Silakan ganti dengan API Key dari NewsAPI.org milik Anda
-    'api_key' => '58f5f6729c53404dacfad472b35ad500', // Default placeholder API key (or active key if provided)
+    'api_key' => '3f6c0cc27c134cf3bc0915f019c4d4f3', // Default placeholder API key (or active key if provided)
     'base_url' => 'https://newsapi.org/v2/',
     
     // Caching configuration
